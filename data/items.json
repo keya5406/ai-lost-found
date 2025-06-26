@@ -1,0 +1,66 @@
+[
+    {
+        "type": "found",
+        "image_name": "lost_bag.png",
+        "description": "A brown leather handbag with a gold zipper.",
+        "location": "Central Park",
+        "date": "2024-04-10",
+        "contact": "contact@lostandfound.com"
+    },
+    {
+        "type": "found",
+        "image_name": "found_bike.jpg",
+        "description": "A blue mountain bike, with a black seat and helmet.",
+        "location": "Liberty Park",
+        "date": "2024-04-11",
+        "contact": "found@founditems.com"
+    },
+    {
+        "type": "lost",
+        "image_name": "lost_phone.jpg",
+        "description": "A black smartphone, cracked screen.",
+        "location": "Downtown Street",
+        "date": "2024-04-12",
+        "contact": "lost@phone.com"
+    },
+    {
+        "type": "found",
+        "image_name": "found_jacket.jpg",
+        "description": "A red winter jacket, size medium.",
+        "location": "City Mall",
+        "date": "2024-04-13",
+        "contact": "contact@foundjacket.com"
+    },
+    {
+        "type": "lost",
+        "image_name": "lost_wallet.jpg",
+        "description": "A black wallet with several cards and cash inside.",
+        "location": "Bus Station",
+        "date": "2024-04-14",
+        "contact": "walletlost@example.com"
+    },
+    {
+        "type": "found",
+        "image_name": "found_watch.jpg",
+        "description": "A silver wristwatch, brand 'Rolex', with scratches on the band.",
+        "location": "Train Station",
+        "date": "2024-04-15",
+        "contact": "found@luxuryitems.com"
+    },
+    {
+        "type": "lost",
+        "image_name": "N/A",
+        "description": "boat tws with black case",
+        "location": "ld brts bus stop",
+        "date": "2025-04-17",
+        "contact": "7016619175"
+    },
+    {
+        "type": "lost",
+        "image_name": "N/A",
+        "description": "boat black tws with black case",
+        "location": "ld brts stand",
+        "date": "2025-04-17",
+        "contact": "choco@bargmail.com"
+    }
+]
