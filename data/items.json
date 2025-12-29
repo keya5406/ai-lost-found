@@ -62,5 +62,21 @@
         "location": "ld brts stand",
         "date": "2025-04-17",
         "contact": "choco@bargmail.com"
+    },
+    {
+        "type": "found",
+        "image_name": "vega-helmet.jpg",
+        "description": "black vega helmet, full face",
+        "location": "ld brts stand",
+        "date": "2025-12-19",
+        "contact": "jimmy.ldce@gmail.com"
+    },
+    {
+        "type": "found",
+        "image_name": "wrist-watch.jpg",
+        "description": "women's wrist watch sonata",
+        "location": "civil lawn",
+        "date": "2025-12-19",
+        "contact": "ldce@gmail.com"
     }
 ]
