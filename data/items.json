@@ -86,5 +86,21 @@
         "location": "civil lawn, ldce",
         "date": "2026-04-26",
         "contact": "testing@gmail.com"
+    },
+    {
+        "type": "found",
+        "image_url": "https://res.cloudinary.com/dhgttx6as/image/upload/v1777146731/hlwxo1d8llahbbsmj1if.jpg",
+        "description": "silver earrings, colorful beads on it",
+        "location": "probably civil lawn",
+        "date": "2026-04-25",
+        "contact": "tester@gmail.com"
+    },
+    {
+        "type": "found",
+        "image_url": "https://res.cloudinary.com/dhgttx6as/image/upload/v1777149277/y1snczkxagqofil9i3il.jpg",
+        "description": "oxidised silver bangles, 2 thick kadas, rest are thin bangles, few simple flattened and others spiralled",
+        "location": "cricket ground of ldce",
+        "date": "2026-04-26",
+        "contact": "finder@gmail.com"
     }
 ]
