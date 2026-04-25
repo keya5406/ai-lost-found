@@ -6,7 +6,7 @@ def add_item():
 
     item_type = st.selectbox("Is this item lost or found?", ['lost', 'found'])
 
-    image_name = st.text_input("Image file name (from /data/images/):").strip()
+    uploaded_file = st.file_uploader("Upload item image", type=["jpg", "png", "jpeg"])
     description = st.text_input("Description of the item:").strip()
     location = st.text_input("Location (e.g., library, park):").strip()
     date = st.date_input("Date (YYYY-MM-DD)")
@@ -18,13 +18,19 @@ def add_item():
             return
 
         # For 'found' items, image is required
-        if item_type == 'found' and not image_name:
+        if item_type == 'found' and not uploaded_file:
             st.warning("⚠️ Please provide an image name for found items.")
             return
+        
+        image_url = None
+
+        if uploaded_file:
+            from app.cloudinary_config import upload_image
+            image_url = upload_image(uploaded_file)
 
         item = {
             "type": item_type,
-            "image_name": image_name if image_name else "N/A",
+            "image_url": image_url,
             "description": description,
             "location": location,
             "date": str(date),

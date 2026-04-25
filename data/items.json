@@ -78,5 +78,13 @@
         "location": "civil lawn",
         "date": "2025-12-19",
         "contact": "ldce@gmail.com"
+    },
+    {
+        "type": "lost",
+        "image_url": "https://res.cloudinary.com/dhgttx6as/image/upload/v1777144595/alnyswcscgcd2etmwpgn.jpg",
+        "description": "women's analog wrist watch, onex company, pinkish color band",
+        "location": "civil lawn, ldce",
+        "date": "2026-04-26",
+        "contact": "testing@gmail.com"
     }
 ]
