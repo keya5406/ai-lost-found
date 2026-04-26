@@ -1,5 +1,7 @@
 import streamlit as st
-from app.utils import load_items, save_items
+from app.utils import save_item, get_items
+from app.matching_engine import find_matches
+from app.cloudinary_config import upload_image
 
 def add_item():
     st.write("### Add Lost/Found Item")
@@ -22,10 +24,9 @@ def add_item():
             st.warning("⚠️ Please provide an image name for found items.")
             return
         
+        # Upload image to Cloudinary
         image_url = None
-
         if uploaded_file:
-            from app.cloudinary_config import upload_image
             image_url = upload_image(uploaded_file)
 
         item = {
@@ -37,8 +38,37 @@ def add_item():
             "contact": contact
         }
 
-        items = load_items()
-        items.append(item)
-        save_items(items)
-
+        # Save item
+        save_item(item)
         st.success("✅ Item added successfully!")
+
+        # Auto-matching
+        items = get_items()
+        matches = find_matches(item, items)
+
+        if matches:
+            st.success(f"🎉 Found {len(matches)} match(es) for your item!")
+
+            for match in matches:
+                matched_item = match["item"]
+                score = match["score"]
+
+                st.markdown("---")
+                st.write(f"**Description**: {matched_item.get('description', 'N/A')}")
+                st.write(f"**Location**: {matched_item.get('location', 'N/A')}")
+                st.write(f"**Date**: {matched_item.get('date', 'N/A')}")
+
+                # Image display
+                image_url = matched_item.get("image_url")
+
+                if image_url:
+                    st.image(image_url, width="stretch")
+                elif matched_item.get("image_name") and matched_item["image_name"] != "N/A":
+                    st.image(f"data/images/{matched_item['image_name']}", width="stretch")
+                else:
+                    st.write("No image available")
+
+                st.write(f"**Match Score**: {round(score, 2)}")
+
+        else:
+            st.info("No matches found right now. We'll keep looking!")

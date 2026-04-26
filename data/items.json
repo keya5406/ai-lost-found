@@ -102,5 +102,21 @@
         "location": "cricket ground of ldce",
         "date": "2026-04-26",
         "contact": "finder@gmail.com"
+    },
+    {
+        "type": "lost",
+        "image_url": "https://res.cloudinary.com/dhgttx6as/image/upload/v1777234249/nr6llbmua5inscufddyp.jpg",
+        "description": "long silver earrings with white and blue beads in it",
+        "location": "library maybe",
+        "date": "2026-04-27",
+        "contact": "girl@gmail.com"
+    },
+    {
+        "type": "lost",
+        "image_url": null,
+        "description": "silver bangles",
+        "location": "cricket ground",
+        "date": "2026-04-26",
+        "contact": "girl@gmail.com"
     }
 ]
