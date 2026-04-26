@@ -6,15 +6,21 @@ data_folder = 'data'
 items_file = os.path.join(data_folder, 'items.json')
 
 # Function to load the items from the file
-def load_items():
+def get_items():
     if not os.path.exists(items_file):
         return []
     with open(items_file, 'r') as f:
         return json.load(f)
 
 # Function to save items to the file
-def save_items(items):
+def save_item(item):
+    items = get_items()
+
+    # ensure folder exists
     if not os.path.exists(data_folder):
         os.makedirs(data_folder)
+
+    items.append(item)
+
     with open(items_file, 'w') as f:
         json.dump(items, f, indent=4)
