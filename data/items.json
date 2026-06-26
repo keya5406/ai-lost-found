@@ -118,5 +118,29 @@
         "location": "cricket ground",
         "date": "2026-04-26",
         "contact": "girl@gmail.com"
+    },
+    {
+        "type": "lost",
+        "image_url": null,
+        "description": "bangles",
+        "location": "cricket ground",
+        "date": "2026-04-27",
+        "contact": "kalpanagupta592004@gmail.com"
+    },
+    {
+        "type": "lost",
+        "image_url": null,
+        "description": "bangles",
+        "location": "cricket ground",
+        "date": "2026-04-26",
+        "contact": "kalpanagupta592004@gmail.com"
+    },
+    {
+        "type": "lost",
+        "image_url": "https://res.cloudinary.com/dhgttx6as/image/upload/v1782291579/ycwsjh9g1wdiihdebelm.jpg",
+        "description": "3 girls in chaniya choli",
+        "location": "pyc",
+        "date": "2025-09-16",
+        "contact": "kalpanagupta592004@gmail.com"
     }
 ]

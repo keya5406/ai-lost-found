@@ -16,12 +16,12 @@ def add_item():
 
     if st.button("Submit"):
         if not description or not location or not contact:
-            st.warning("⚠️ Please fill in all required fields.")
+            st.warning("Please fill in all required fields.")
             return
 
         # For 'found' items, image is required
         if item_type == 'found' and not uploaded_file:
-            st.warning("⚠️ Please provide an image name for found items.")
+            st.warning("Please provide an image name for found items.")
             return
         
         # Upload image to Cloudinary
@@ -40,14 +40,14 @@ def add_item():
 
         # Save item
         save_item(item)
-        st.success("✅ Item added successfully!")
+        st.success("Item added successfully!")
 
         # Auto-matching
         items = get_items()
         matches = find_matches(item, items)
 
         if matches:
-            st.success(f"🎉 Found {len(matches)} match(es) for your item!")
+            st.success(f"Found {len(matches)} match(es) for your item!")
 
             for match in matches:
                 matched_item = match["item"]

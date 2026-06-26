@@ -15,7 +15,7 @@ def match_items():
 
     if st.button("Find Matches"):
         if not user_description or not user_location:
-            st.warning("⚠️ Please fill in description and location.")
+            st.warning("Please fill in description and location.")
             return
 
         items = get_items()
@@ -29,7 +29,7 @@ def match_items():
         matched_items = find_matches(input_item, items)
 
         if matched_items:
-            st.success(f"🔍 Found {len(matched_items)} potential match(es):")
+            st.success(f"Found {len(matched_items)} potential match(es):")
 
             for match in matched_items:
                 item = match["item"]
@@ -59,4 +59,4 @@ def match_items():
 
                 st.write(f"**Match Score**: {round(score, 2)}")
         else:
-            st.warning("😕 No strong matches found based on description.")
+            st.warning("No strong matches found based on description.")
